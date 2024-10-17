@@ -18,7 +18,7 @@ this script will automatically update the README.md file and push the changes to
 ### Installing
 
 1. `git clone` the repository
-2. Run `npm ci` to install the dependencies
+2. Run `npm install` to install the dependencies
 3. test or develop the script with `npm start`
 
 ### Usage
@@ -53,6 +53,13 @@ if you want to start with a blank file, just remove the content of this file.
 This file contains the footer that will be added to the end of the generated markdown file. You can also add any markdown content you want to be added to the end of the file.
 
 if you want to start with a blank file, just remove the content of this file.
+
+---
+
+
+[object Promise]
+
+---
 
 # Footer that will be added to the end of the generated markdown file
 

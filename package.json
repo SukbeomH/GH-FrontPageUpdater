@@ -1,6 +1,6 @@
 {
-	"name": "blog_crawler_github",
-	"version": "1.0.0",
+	"name": "front_page_updater_github",
+	"version": "1.0.5",
 	"description": "Github front page updater that work with RSS feed!",
 	"main": "readmeUpdate.js",
 	"type": "module",

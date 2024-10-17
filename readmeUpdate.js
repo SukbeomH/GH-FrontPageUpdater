@@ -1,15 +1,15 @@
 import { writeFileSync, readFileSync } from "node:fs";
 import Parser from "rss-parser";
+import config from "./config.json" with { type: "json" };
 
-// Get the configuration from the config.json file
-const { url, maxPosts } = require("./config.json");
+const { url, maxPosts } = config;
 
 /**
  *  Content that concatenates before Feed content for README.md.
  *  Read the ./markdown/staticHeader.md file and store it in the text variable.
  *  @returns {string} staticHeader
  */
-getStaticHeader = () => {
+const getStaticHeader = () => {
 	const staticHeader = readFileSync("./markdown/staticHeader.md", "utf8");
 	return staticHeader;
 };
@@ -18,7 +18,8 @@ getStaticHeader = () => {
  * @param {string} url - RSS feed URL
  * @returns {string} text - list of the latest posts, each with a title and link
  */
-createFeedContents = async (url, maxPosts) => {
+const createFeedContents = async (url, maxPosts) => {
+	let text = "";
 	// get RSS feed from the URL
 	const feed = await new Parser({
 		headers: {
@@ -39,16 +40,16 @@ createFeedContents = async (url, maxPosts) => {
  * Read the ./markdown/staticFooter.md file and store it in the text variable.
  * @returns {string} staticFooter
  */
-getStaticFooter = () => {
+const getStaticFooter = () => {
 	const staticFooter = readFileSync("./markdown/staticFooter.md", "utf8");
 	return staticFooter;
 };
 
 /** Create a README.md file with the contents of the staticHeader, feedContents, and staticFooter.
  */
-createReadme = async () => {
+const createReadme = (url, maxPosts) => {
 	const staticHeader = getStaticHeader();
-	const feedContents = await createFeedContents(url);
+	const feedContents = createFeedContents(url, maxPosts);
 	const staticFooter = getStaticFooter();
 
 	const readme = staticHeader + "\n\n" + feedContents + "\n\n" + staticFooter;
@@ -58,4 +59,4 @@ createReadme = async () => {
 	return;
 };
 
-createReadme();
+createReadme(url, maxPosts);
