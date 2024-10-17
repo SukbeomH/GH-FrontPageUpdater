@@ -18,7 +18,7 @@ this script will automatically update the README.md file and push the changes to
 ### Installing
 
 1. `git clone` the repository
-2. Run `npm ci` to install the dependencies
+2. Run `npm install` to install the dependencies
 3. test or develop the script with `npm start`
 
 ### Usage
