@@ -47,9 +47,9 @@ const getStaticFooter = () => {
 
 /** Create a README.md file with the contents of the staticHeader, feedContents, and staticFooter.
  */
-const createReadme = (url, maxPosts) => {
+const createReadme = async (url, maxPosts) => {
 	const staticHeader = getStaticHeader();
-	const feedContents = createFeedContents(url, maxPosts);
+	const feedContents = await createFeedContents(url, maxPosts);
 	const staticFooter = getStaticFooter();
 
 	const readme = staticHeader + "\n\n" + feedContents + "\n\n" + staticFooter;
@@ -59,4 +59,4 @@ const createReadme = (url, maxPosts) => {
 	return;
 };
 
-createReadme(url, maxPosts);
+await createReadme(url, maxPosts);
