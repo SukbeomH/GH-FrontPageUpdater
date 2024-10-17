@@ -68,11 +68,11 @@ if you want to start with a blank file, just remove the content of this file.
 
 
 
+#### [📝 RSS 피드를 사용하여 Github 프론트 페이지 자동 업데이트](https://veritasgarage.tistory.com/283)</br>
 #### [📝 [ML] 통계 기초 :: 추론 통계](https://veritasgarage.tistory.com/282)</br>
 #### [📝 [ML] 통계 개념 기초 :: 기술통계](https://veritasgarage.tistory.com/281)</br>
 #### [📝 [WEB_HTTP] Cookie와 Session](https://veritasgarage.tistory.com/280)</br>
 #### [📝 [RAG] RAG와 ELK](https://veritasgarage.tistory.com/279)</br>
-#### [📝 [Python] Django Basics](https://veritasgarage.tistory.com/278)</br>
 
 ---
 
