@@ -55,3 +55,25 @@ This file contains the footer that will be added to the end of the generated mar
 if you want to start with a blank file, just remove the content of this file.
 
 ---
+
+
+
+#### [📝 [ML] 통계 기초 :: 추론 통계](https://veritasgarage.tistory.com/282)</br>
+#### [📝 [ML] 통계 개념 기초 :: 기술통계](https://veritasgarage.tistory.com/281)</br>
+#### [📝 [WEB_HTTP] Cookie와 Session](https://veritasgarage.tistory.com/280)</br>
+#### [📝 [RAG] RAG와 ELK](https://veritasgarage.tistory.com/279)</br>
+#### [📝 [Python] Django Basics](https://veritasgarage.tistory.com/278)</br>
+
+---
+
+# Footer that will be added to the end of the generated markdown file
+
+## License (samples)
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+- Hat tip to
+- Inspiration
+- etc
