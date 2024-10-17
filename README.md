@@ -27,6 +27,16 @@ It has github actions that will run the script every day at 02:00 UTC. You can a
 
 ### Configuration
 
+#### GitHub Actions Setting
+
+1. Fork this repository
+2. Go to the `Settings` tab of your repository
+3. Go to the `Actions` section on the left sidebar
+4. Click on the `General` tab
+5. Enable the `Workflow permissions` feature to allow the workflow to run
+6. `Read and write` access is required to push changes to the repository
+7. Check the `Allow GitHub Actions to create and approve pull requests` checkbox
+
 #### ./config.json
 
 This file contains the configuration for the script. You can change the configuration to fit your needs.
